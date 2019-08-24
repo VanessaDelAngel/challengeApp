@@ -1,0 +1,59 @@
+.bodyCard {
+  position:relative;
+    height: 238px;
+    width: 319px;
+    margin:0 auto;
+    background-color: white;
+    color: #6E6E6E;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+.cardTitle{
+  color: #424242;
+}
+#imagenlist {
+    height: 238px;
+    width: 319px;
+    position:relative;
+    margin:0 auto;
+  }
+#imagenlist img {
+    position: absolute;
+    left: 0;
+    height: 238px;
+    width: 319px;
+    padding-top:20px;
+}
+#imagenlist:hover img {
+    animation-name: imagenlistFadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+}
+  @keyframes imagenlistFadeInOut {
+    0% {
+      opacity:1;
+    }
+    17% {
+      opacity:1;
+    }
+    25% {
+      opacity:0;
+    }
+    92% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  #imagenlist img:nth-of-type(1) {
+    animation-delay: 6s;
+  }
+  #imagenlist img:nth-of-type(2) {
+    animation-delay: 4s;
+  }
+  #imagenlist img:nth-of-type(3) {
+    animation-delay: 2s;
+  }

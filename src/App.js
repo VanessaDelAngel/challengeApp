@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import './components/ListImage.css';
+import ListImage from './components/ListImage'
+
+
+
+const data = [
+  "https://tipsparatuviaje.com/wp-content/uploads/2018/08/cinco-lagos-fuji.jpg",
+  "https://intriper.com/wp-content/uploads/2016/06/Monte-Fuji-Japon.jpg",
+  "https://img.ev.mu/images/articles/960x/826765.jpg",
+  "https://mk0viajeroa4ra28voan.kinstacdn.com/wp-content/uploads/2018/10/viajar_a_japon_en_invierno-768x480.jpg"
+]
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ListImage dataImages={data} />   
     </div>
   );
 }
